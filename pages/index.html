@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Restaurants in Town</h1>
+        <div class="gallery">
+            <div class="card" onclick="showDetails(this)">
+                <img src="/pages/images/419458107.jpg" alt="Restaurant 1">
+                <div class="info">
+                    <h3>Little Mamma</h3>
+                    <p>Address: Marrakech - gueliz</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Horaires : 11am - 12am</p>
+                    <p>Average Price: $3 - $25</p>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails(this)">
+                <img src="/pages/images/Le-Catanzaro-restaurant-italien-marrakech-gueliz.jpg" alt="Restaurant 2">
+                <div class="info">
+                    <h3>Le catanzaro Marrakech</h3>
+                    <p>Rue Tariq Bnou Ziad, Marrakech 40000</p>
+                    <p>Phone: 05244-33731</p>
+                    <p>Horaires : 11am - 11pm</p>
+                    <p>Average Price: $5 - $30</p>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails(this)">
+                <img src="/pages/images/2023-09-29.jpg" alt="Restaurant 3">
+                <div class="info">
+                    <h3>Le 6 Marrakech</h3>
+                    <p>Blvd Mohamed 6 Hivernage, Marrakech 40000</p>
+                    <p>Phone: 0613-604352</p>
+                    <p>Horaires : 12am - 2am</p>
+                    <p>Average Price: $10 - $220</p>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails(this)">
+                <img src="/pages/images/2019-03-05.jpg" alt="Restaurant 4">
+                <div class="info">
+                    <h3>Restaurant Ba-Bouche</h3>
+                    <p> Adress: Dar El Bacha, 120 Twala، Marrakech 40000</p>
+                    <p>05243-90372</p>
+                    <p>Horaires : 12am - 12am</p>
+                    <p>Average Price: $15 - $60</p>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails(this)">
+                <img src="/pages/images/jjjjjjjjjj.jpg" alt="Restaurant 5">
+                <div class="info">
+                    <h3>L'mida Marrakech</h3>
+                    <p>Address: Derb Nkhal, 78 Rahba Lakdima, Marrakech 40030</p>
+                    <p>Phone: (567) 890-1234</p>
+                    <p>Horaires : 12am - 2am</p>
+                    <p>Average Price: $20 - $50</p>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails(this)">
+                <img src="/pages/images/La-Trattoria-Marrakech.jpg" alt="Restaurant 6">
+                <div class="info">
+                    <h3>La Trattoria Marrakech</h3>
+                    <p>Address: 179 Rue Mohammed el Beqal, Marrakech 40000</p>
+                    <p>Phone: 05244-32641</p>
+                    <p>Horaires : 12am - 2am</p>
+                    <p>Average Price: $25 - $60</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="hideDetails()">
+        <div class="overlay-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="hideDetails()">&times;</span>
+            <div id="overlay-info"></div>
+        </div>
+    </div>
+    <div>
+        <button class="newR">New Restaurant</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
